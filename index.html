@@ -354,12 +354,44 @@
   @keyframes fadeInUp { from{opacity:0;transform:translateY(24px);} to{opacity:1;transform:translateY(0);} }
 
   @media(max-width:900px) {
-    nav { padding:1rem 1.5rem; }
+    nav { padding:0.8rem 1.2rem; }
     .nav-links { display:none; }
-    section { padding:4rem 1.5rem; }
-    .about-grid, .contact-grid { grid-template-columns:1fr; gap:2rem; }
-    .form-row { grid-template-columns:1fr; }
-    .hero-name { letter-spacing:-1px; }
+    .nav-logo { font-size:0.85rem; }
+    .lang-drop-btn { padding:5px 10px; font-size:0.78rem; }
+    .theme-btn { width:32px; height:32px; font-size:0.95rem; }
+    section { padding:3.5rem 1.2rem; }
+    .about-grid { grid-template-columns:1fr; gap:2rem; }
+    .hero { padding:5rem 1.2rem 3rem; }
+    .hero-logo { width:110px; height:110px; margin-bottom:1rem; }
+    .hero-name { font-size:clamp(1.8rem,8vw,3rem); letter-spacing:-1px; }
+    .hero-subtitle { font-size:0.95rem; }
+    .hero-desc { font-size:0.9rem; max-width:100%; }
+    .hero-cta { flex-direction:row; align-items:center; justify-content:center; gap:0.7rem; flex-wrap:nowrap; }
+    .btn-primary, .btn-secondary { width:auto; max-width:none; justify-content:center; padding:0.75rem 1.2rem; font-size:0.85rem; }
+    .values-grid { grid-template-columns:1fr; gap:1rem; }
+    .about-stats { grid-template-columns:1fr 1fr; gap:0.8rem; }
+    .stat-card { padding:1rem; }
+    .stat-card .stat-number { font-size:1.5rem; }
+    .contact-item { padding:1rem; }
+    .section-title { font-size:clamp(1.5rem,5vw,2rem); }
+    .lang-drop-menu { left:auto; right:0; }
+    .scroll-top { width:40px; height:40px; font-size:1rem; }
+  }
+  @media(max-width:480px) {
+    nav { padding:0.7rem 1rem; }
+    .nav-logo { font-size:0.75rem; }
+    .hero-logo { width:90px; height:90px; }
+    .hero-name { font-size:clamp(1.5rem,9vw,2.2rem); }
+    .hero-badge { font-size:0.72rem; padding:5px 12px; }
+    .about-stats { grid-template-columns:1fr 1fr; }
+    section { padding:3rem 1rem; }
+    .value-card { padding:1.2rem; }
+    .value-name { font-size:1rem; }
+    .value-desc { font-size:0.82rem; }
+    footer { padding:2rem 1rem; }
+    .footer-text { font-size:0.78rem; }
+    .hero-typing { font-size:0.88rem; }
+    .contact-section { padding:3rem 1rem; }
   }
 </style>
 </head>
